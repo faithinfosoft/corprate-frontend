@@ -1,0 +1,146 @@
+/* Candidate Profile - Modern Classic Styles */
+
+:root {
+    --profile-primary: #0d6efd;
+    --profile-secondary: #6c757d;
+    --profile-success: #198754;
+    --profile-info: #0dcaf0;
+    --card-radius: 1.25rem;
+    --inner-radius: 0.75rem;
+    --profile-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.candidate-dashboard-container .card {
+    border: none !important;
+    border-radius: var(--card-radius) !important;
+    box-shadow: var(--profile-shadow) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.candidate-dashboard-container .card-body {
+    padding: 1.5rem !important;
+}
+
+.profile-img-container {
+    position: relative;
+    padding: 10px;
+}
+
+.profile-img-container img {
+    border-radius: var(--inner-radius);
+    transition: transform 0.3s ease;
+}
+
+.profile-img-container:hover img {
+    transform: scale(1.02);
+}
+
+.nav-pills .nav-link {
+    border-radius: var(--inner-radius) !important;
+    padding: 0.75rem 1.25rem !important;
+    font-weight: 600;
+    color: var(--profile-secondary);
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--profile-primary) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.info-item-card {
+    background-color: #f8f9fa;
+    border-radius: var(--inner-radius);
+    padding: 1.25rem;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.info-row-icon {
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    color: var(--profile-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover .info-row-icon {
+    background-color: var(--profile-primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.status-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: var(--card-radius);
+    border: none;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modal-header {
+    border-bottom: 1px solid #f1f3f5;
+    padding: 1.5rem 2rem;
+}
+
+.modal-title {
+    font-weight: 700;
+    color: #212529;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: var(--inner-radius);
+    padding: 0.75rem 1rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+    border-color: var(--profile-primary);
+}
+
+.btn-premium {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: var(--inner-radius);
+    transition: all 0.3s ease;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
